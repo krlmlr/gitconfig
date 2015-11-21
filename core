@@ -1,0 +1,20 @@
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[merge "ours"]
+	driver = /bin/true
+[rerere]
+	enabled = true
+[push]
+	default = matching
+	followTags = true
+[pull]
+	ff = only
+[merge]
+	conflictstyle = diff3
+	ff = false
+[credential]
+	helper = cache --timeout=86400
