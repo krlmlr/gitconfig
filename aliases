@@ -9,6 +9,7 @@
 	a = add
 	ap = add -p
 	b = branch
+	bm = branch --merged
 	bv = branch -v
 	bvv = branch -vv
 	ci = commit -v
