@@ -20,6 +20,12 @@
 	dm = !sh -c 'diffuse -m "$@" &' -
 	f = fetch -p
 	fa = fetch --all -p
+	ffs = flow feature start
+	ffp = flow feature publish
+	fff = flow feature finish
+	frs = flow release start
+	frp = flow release publish
+	frf = flow release finish
 	l = log --numstat
 	lp = log -p
 	m = merge
