@@ -6,10 +6,10 @@
 	bm = branch --merged
 	bv = branch -v
 	bvv = branch -vv
-	ci = commit -v
-	cia = commit --amend
+	ci = commit --verbose
+	cia = commit --amend --verbose
 	ciao = commit --amend --no-edit
-	cim = commit -vm
+	cim = commit -m
 	cif = !sh -c 'git commit --fixup=$1' -
 	cir = !sh -c 'git commit --reuse-message=${1:-HEAD}' -
 	co = checkout
