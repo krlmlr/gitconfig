@@ -4,54 +4,47 @@
 	diff = auto
 	interactive = auto
 	status = auto
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = cyan bold
-	old = magenta bold
-	new = green bold
-[color "status"]
-	added = yellow bold
-	changed = green bold
-	untracked = cyan bold
 [alias]
 	logs = log --numstat
-	ci = commit
-	co = checkout
-	cob = checkout -b
-	cia = commit --amend
-	ciao = commit --amend --no-edit
-	cim = commit -m
-	cif = !sh -c 'git commit --fixup=$1' -
-	cir = !sh -c 'git commit --reuse-message=${1:-HEAD}' -
-	rmi = rebase master -i --autosquash
-	rma = rebase master
-	ri = rebase -i --autosquash
-	rc = rebase --continue
-	ra = rebase --abort
-	re = rebase
-	s = status
 	a = add
 	ap = add -p
 	b = branch
 	bv = branch -v
 	bvv = branch -vv
-	l = logs
+	ci = commit -v
+	cia = commit --amend
+	ciao = commit --amend --no-edit
+	cim = commit -vm
+	cif = !sh -c 'git commit --fixup=$1' -
+	cir = !sh -c 'git commit --reuse-message=${1:-HEAD}' -
+	co = checkout
+	cob = checkout -b
+	cop = checkout -p
+	d = diff
+	dc = diff --cached
+	dm = !sh -c 'diffuse -m "$@" &' -
+	f = fetch -p
+	fa = fetch --all -p
+	l = log --numstat
 	lp = log -p
 	m = merge
 	ma = merge --abort
-	d = diff
-	dc = diff --cached
-	rs = reset
-	rh = reset HEAD
-	rhp = reset HEAD^
+	mf = merge --ff
 	ph = push
+	phf = push -f
+	phu = push -u
 	pl = pull
-	f = fetch
-	fa = fetch --all
+	q = reset
+	qh = reset HEAD
+	qhp = reset HEAD^
+	r = rebase
+	ri = rebase -i --autosquash
+	ra = rebase --abort
+	rc = rebase --continue
+	rs = rebase --skip
+	rma = rebase master
+	rmi = rebase master -i --autosquash
+	s = status
 [push]
 	default = matching
 	followTags = true
@@ -60,7 +53,6 @@
 [merge]
 	conflictstyle = diff3
 	ff = false
-[core]
 [merge "ours"]
 	driver = true
 [credential]
