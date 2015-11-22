@@ -18,8 +18,8 @@
 	d = diff
 	dc = diff --cached
 	dm = !sh -c 'diffuse -m "$@" &' -
-	f = fetch --patch
-	fa = fetch --all --patch
+	f = fetch --prune
+	fa = fetch --all --prune
 	ffs = flow feature start
 	ffp = flow feature publish
 	fff = flow feature finish
@@ -35,6 +35,7 @@
 	phf = push --force
 	phu = push --set-upstream
 	pl = pull
+	plr = pull --rebase
 	q = reset
 	qh = reset HEAD
 	qhp = reset HEAD^
