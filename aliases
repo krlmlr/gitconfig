@@ -1,6 +1,7 @@
 [alias]
 	a = add
 	ac = commit --all --verbose
+	acm = commit --all --message
 	ap = add --patch
 	b = branch
 	bm = branch --merged
