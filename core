@@ -18,3 +18,5 @@
 	ff = false
 [credential]
 	helper = cache --timeout=86400
+[gitflow "feature.finish"]
+	no-ff = true
