@@ -29,7 +29,9 @@
 	frp = flow release publish
 	frf = flow release finish
 	l = log --numstat
+	lf = log --numstat --first-parent
 	lp = log --patch
+	lfp = log --patch -m --first-parent
 	m = merge
 	ma = merge --abort
 	mf = merge --ff
