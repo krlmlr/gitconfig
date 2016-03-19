@@ -18,7 +18,9 @@
 	cob = checkout -b
 	cop = checkout --patch
 	d = diff
+	dw = diff --word-diff
 	dc = diff --cached
+	dcw = diff --cached --word-diff
 	dm = !sh -c 'diffuse -m "$@" &' -
 	f = fetch --prune
 	fa = fetch --all --prune
